@@ -2,7 +2,7 @@
 ; After every change: increase the serial, then run  zone-reload
 $TTL 45
 @     20 IN SOA ns.cs-202-08.lab. admin.cs-202-08.lab. (
-            2026102502 ; serial
+            2026102508 ; serial
             3600       ; refresh
             600        ; retry
             86400      ; expire
@@ -12,9 +12,10 @@ $TTL 45
 ns    IN A  10.53.1.1
 
 ; ---- add records from your variant card below this line ----
-www   IN A      10.53.0.80
+www   IN A      10.53.0.81
 shop  IN CNAME  www
 mail  IN A      10.53.0.80
 @     IN MX     15 mail
 @     IN TXT    "lab-token=5887307d"
 next  35 IN A   10.53.0.81
+new-kxzrr IN A 10.53.0.80
