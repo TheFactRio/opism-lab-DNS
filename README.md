@@ -149,10 +149,9 @@ curl: (7) Failed to connect to www.cs-202-08.lab port 9443 after 1 ms: Couldn't 
 ```
 
 Запит не вдається на етапі TCP-з'єднання. Пошук імені успішний (Host www.cs-202-08.lab:9443 was resolved, IPv4: 10.53.0.80).
+Далі Trying 10.53.0.80:9443... і Connection refused: на порту 9443 нічого не слухає. Рядків про TLS-рукостискання немає, бо до TLS не дійшло.
 
 ```text
-Далі Trying 10.53.0.80:9443... і Connection refused: на порту 9443 нічого не слухає. Рядків про TLS-рукостискання немає, бо до TLS справа не дійшла.
-
 root@ns-cs-202-08:/# curl -v 'http://www.cs-202-08.lab/catalog/../reports'
 * Host www.cs-202-08.lab:80 was resolved.
 * IPv6: (none)
